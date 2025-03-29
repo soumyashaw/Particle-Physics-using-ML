@@ -81,7 +81,7 @@ Duarte, Javier (2015).
 ## Acknowledgements
 
 Special thanks to:
-	- CERN Open Data and Javier Duarte for providing the dataset.
-	- The open-source Python data science community for the powerful tools used in this analysis, including Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
+- CERN Open Data and Javier Duarte for providing the dataset.
+- The open-source Python data science community for the powerful tools used in this analysis, including Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
 
 This work is intended for educational and research purposes only.
