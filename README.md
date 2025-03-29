@@ -85,3 +85,93 @@ This project is licensed under the MIT License.
 ## 🤝 Acknowledgements
 
 Thanks to CERN Open Data and Javier Duarte for providing the dataset.
+
+
+
+
+
+
+
+# Particle Physics Analysis using Machine Learning
+
+This repository combines projects that apply machine learning techniques to analyze high-energy physics events, focusing on classifying and predicting jet counts using datasets from the CMS (Compact Muon Solenoid) experiment.
+
+---
+
+## 📘 Overview
+
+The primary objectives of this repository are:
+
+1. **Jet Count Prediction**: Predict the number of jets in a particle collision event using physics-inspired features derived from CMS Open Data.
+2. **Exploratory Data Analysis**: Perform EDA on the dataset 'Higgs Boson Machine Learning Challenge'.
+3. **Event Classification**: Classify particle collision events to distinguish between signal and background events.
+
+By leveraging machine learning models, we aim to explore the feasibility of predicting jet counts and classifying events using kinematic variables.
+
+---
+
+## 📂 Repository Structure
+
+- `Data/`: Contains datasets used for analysis.
+- `notebooks/`: Jupyter notebooks with detailed implementations of data analysis, model training, and evaluation.
+  - `Jet_Prediction_using_ML.ipynb`: Notebook focusing on predicting jet counts.
+  - `EDA.ipynb`: Notebook for performing EDA on the Higgs Boson ML Challenge.
+  - `EventClassifier.ipynb`: Notebook dedicated to classifying collision events.
+- `requirements.txt`: Lists the Python dependencies required to run the notebooks.
+
+---
+
+## 📊 Dataset Description
+
+The datasets contain information from particle collisions with key features such as:
+
+- `Run`, `Lumi`, `Event`: Identifiers for each collision event.
+- `MR`, `Rsq`: Razor kinematic variables estimating event mass scale and energy flow.
+- `E1`, `Px1`, `Py1`, `Pz1`: Four-vector of the **leading megajet**.
+- `E2`, `Px2`, `Py2`, `Pz2`: Four-vector of the **subleading megajet**.
+- `HT`: Scalar sum of transverse momentum of all jets.
+- `MET`: Missing transverse energy.
+- `nJets`: Target variable — number of jets with transverse momentum > 40 GeV.
+- `nBJets`: Number of **b-tagged** jets.
+
+**Source**:  
+Duarte, Javier (2015). *Example CSV output file for SUSYBSMAnalysis-RazorFilter.*  
+[CERN Open Data Portal](http://opendata.cern.ch/)
+
+---
+
+## 🛠️ Workflow
+
+1. **Data Loading and Cleaning**: Import datasets and handle missing or inconsistent data.
+2. **Exploratory Data Analysis (EDA)**: Visualize and understand data distributions and relationships.
+3. **Feature Engineering**: Create and select relevant features for modeling.
+4. **Train/Test Split**: Partition data into training and testing sets.
+5. **Model Training**: Train machine learning models (e.g., Random Forest, XGBoost) on the training data.
+6. **Model Evaluation**: Assess model performance using metrics like accuracy, precision, recall, and ROC-AUC.
+7. **Prediction and Visualization**: Generate predictions and visualize results to interpret model effectiveness.
+
+---
+
+## 🚀 Technologies Used
+
+- Python
+- Jupyter Notebook
+- Pandas & NumPy
+- Scikit-learn
+- Matplotlib & Seaborn
+- XGBoost
+
+---
+
+## 📈 Results
+
+The trained models are evaluated using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R² score, accuracy, precision, recall, and ROC-AUC. Visualizations of prediction accuracy and feature importance are also provided within the notebooks.
+
+---
+
+## 📁 How to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/soumyashaw/Particle-Physics-using-ML.git
+   cd Particle-Physics-using-ML
