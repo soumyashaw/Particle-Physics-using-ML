@@ -98,7 +98,7 @@ This repository combines projects that apply machine learning techniques to anal
 
 ---
 
-## 📘 Overview
+## Overview
 
 The primary objectives of this repository are:
 
@@ -110,7 +110,7 @@ By leveraging machine learning models, we aim to explore the feasibility of pred
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 - `Data/`: Contains datasets used for analysis.
 - `notebooks/`: Jupyter notebooks with detailed implementations of data analysis, model training, and evaluation.
@@ -121,7 +121,7 @@ By leveraging machine learning models, we aim to explore the feasibility of pred
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 The datasets contain information from particle collisions with key features such as:
 
@@ -134,25 +134,17 @@ The datasets contain information from particle collisions with key features such
 - `nJets`: Target variable — number of jets with transverse momentum > 40 GeV.
 - `nBJets`: Number of **b-tagged** jets.
 
+The other dataset is not added due to privacy reasons. Visit [Kaggle]{https://www.kaggle.com/competitions/higgs-boson} for the dataset.
+
 **Source**:  
-Duarte, Javier (2015). *Example CSV output file for SUSYBSMAnalysis-RazorFilter.*  
+Duarte, Javier (2015). 
 [CERN Open Data Portal](http://opendata.cern.ch/)
 
----
-
-## 🛠️ Workflow
-
-1. **Data Loading and Cleaning**: Import datasets and handle missing or inconsistent data.
-2. **Exploratory Data Analysis (EDA)**: Visualize and understand data distributions and relationships.
-3. **Feature Engineering**: Create and select relevant features for modeling.
-4. **Train/Test Split**: Partition data into training and testing sets.
-5. **Model Training**: Train machine learning models (e.g., Random Forest, XGBoost) on the training data.
-6. **Model Evaluation**: Assess model performance using metrics like accuracy, precision, recall, and ROC-AUC.
-7. **Prediction and Visualization**: Generate predictions and visualize results to interpret model effectiveness.
+[Higgs Boson Machine Learning Challenge]{https://kaggle.com/competitions/higgs-boson}., 2014. Kaggle.
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 
 - Python
 - Jupyter Notebook
@@ -163,15 +155,26 @@ Duarte, Javier (2015). *Example CSV output file for SUSYBSMAnalysis-RazorFilter.
 
 ---
 
-## 📈 Results
-
-The trained models are evaluated using metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R² score, accuracy, precision, recall, and ROC-AUC. Visualizations of prediction accuracy and feature importance are also provided within the notebooks.
-
----
-
-## 📁 How to Run
+## How to Run
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/soumyashaw/Particle-Physics-using-ML.git
-   cd Particle-Physics-using-ML
+   cd Particle-Physics-using-ML```
+2.	Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the notebooks:
+	- Open notebooks/Jet_Prediction_using_ML.ipynb in Jupyter Notebook or JupyterLab and execute the cells to follow the jet prediction analysis.
+	- Open notebooks/EventClassifier.ipynb to explore the event classification process.
+
+---
+
+## Acknowledgements
+
+Special thanks to:
+	•	CERN Open Data and Javier Duarte for providing the dataset.
+	•	The open-source Python data science community for the powerful tools used in this analysis, including Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
+
+This work is intended for educational and research purposes only.
