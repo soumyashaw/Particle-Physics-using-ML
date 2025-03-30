@@ -1,4 +1,4 @@
-# Particle Physics Analysis using Machine Learning
+# Particle Physics using Machine Learning
 
 This repository combines projects that apply machine learning techniques to analyze high-energy physics events, focusing on classifying and predicting jet counts using datasets from the CMS (Compact Muon Solenoid) experiment.
 
